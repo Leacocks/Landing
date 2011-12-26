@@ -44,7 +44,7 @@
 			</div>
 			<div class="middle section">
 				<a href="<?=$nav['CampuSPOT']?>" title="CampuSPOT">
-					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/campuspot.JPG', 320, 320); ?>" alt="CampuSpot" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/campuspot.jpg', 320, 320); ?>" alt="CampuSpot" width="320" height="320" />
 					<span class="name">CAMPUSPOT</span>
 					<span class="desc">&nbsp;Our Fashion Spots</span>
 				</a>
