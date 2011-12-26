@@ -1,4 +1,12 @@
-<?php require_once(dirname(__FILE__).'/../code/common.php'); $nav=leacocks_nav(); ?>
+<?php 
+	require_once(dirname(__FILE__).'/../code/common.php');
+	$nav = leacocks_nav(); 
+	
+	function getTimThumbPhotoURL($url, $w, $h){
+		return "http://leacocks.com/home/thumb.php?src=".urlencode($url)."&zc=1&q=80&w=$w&h=$h";
+	}
+	
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,27 +31,27 @@
 </head>
 <body>
 	<header>
-		<img src="/home/front-page/LCslogo.jpg" alt="Leacock's Logo" title="Leacock's. Welcome." width="250" height="87">
+		<img src="<?php echo getTimThumbPhotoURL('/home/front-page/LCslogo.jpg', 250, 87); ?>" alt="Leacock's Logo" title="Leacock's. Welcome." width="250" height="87">
 	</header>
 	<section id="content">
 		<div class="row">
 			<div class="left section">
 				<a href="<?=$nav['Features']?>" title="Features">
-					<img src="/home/front-page/features.jpg" alt="Features" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/features.jpg', 320, 320); ?>" alt="Features" width="320" height="320" />
 					<span class="name">FEATURES</span>
 					<span class="desc">&nbsp;Our Articles</span>
 				</a>
 			</div>
 			<div class="middle section">
 				<a href="<?=$nav['CampuSPOT']?>" title="CampuSPOT">
-					<img src="/home/front-page/campuspot.JPG" alt="CampuSpot" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/campuspot.JPG', 320, 320); ?>" alt="CampuSpot" width="320" height="320" />
 					<span class="name">CAMPUSPOT</span>
 					<span class="desc">&nbsp;Our Fashion Spots</span>
 				</a>
 			</div>
 			<div class="right section">
 				<a href="<?=$nav['Sessions']?>" title="Sessions">
-					<img src="/home/front-page/sessions.jpg" alt="Sessions" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/sessions.jpg', 320, 320); ?>" alt="Sessions" width="320" height="320" />
 					<span class="name" id="sessions">SESSIONS</span>
 					<span class="desc">&nbsp;Our Concerts</span>
 				</a>
@@ -52,14 +60,14 @@
 		<div class="row">
 			<div class="left section">
 				<a href="<?=$nav['Photos']?>" title="Photos">
-					<img src="/home/front-page/photos.jpg" alt="Photos" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/photos.jpg', 320, 320); ?>" alt="Photos" width="320" height="320" />
 					<span class="name">PHOTOS</span>
 					<span class="desc">&nbsp;Our Photography</span>
 				</a>
 			</div>
 			<div class="middle section">
 				<a href="<?=$nav['Who We Are']?>" title="Who We Are">
-					<img src="/home/front-page/who-we-are.jpg" alt="Who We Are" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/who-we-are.jpg"', 320, 320); ?>" alt="Who We Are" width="320" height="320" />
 					<span class="name">WHO<br>WE ARE</span>
 					<span class="desc">&nbsp;Our Contributors</span>
 				</a>
