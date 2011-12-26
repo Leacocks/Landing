@@ -67,7 +67,7 @@
 			</div>
 			<div class="middle section">
 				<a href="<?=$nav['Who We Are']?>" title="Who We Are">
-					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/who-we-are.jpg"', 320, 320); ?>" alt="Who We Are" width="320" height="320" />
+					<img src="<?php echo getTimThumbPhotoURL('/home/front-page/who-we-are.jpg', 320, 320); ?>" alt="Who We Are" width="320" height="320" />
 					<span class="name">WHO<br>WE ARE</span>
 					<span class="desc">&nbsp;Our Contributors</span>
 				</a>
