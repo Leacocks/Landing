@@ -3,7 +3,7 @@
 	$nav = leacocks_nav(); 
 	
 	function getTimThumbPhotoURL($url, $w, $h){
-		return "http://leacocks.com/home/thumb.php?src=".urlencode($url)."&zc=1&q=80&w=$w&h=$h";
+		return "http://leacocks.com/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
 	}
 	
 ?>
