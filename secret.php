@@ -32,7 +32,7 @@
 <body>
 	<header>
 		<img src="<?php echo getTimThumbPhotoURL('/home/front-page/LCslogo.jpg', 250, 87); ?>" alt="Leacock's Logo" title="Leacock's. Welcome." width="250" height="87">
-		<a href="https://www.facebook.com/events/365554063461761/" title="Leacock's & Queer McGill Present: #DARK AND INTIMATE WITH RYAN O'CONNELL"><img border="0" src="<?php echo getTimThumbPhotoURL('/home/front-page/ryan_banner.jpg', 770, 85); ?>" alt="Leacock's & Queer McGill Present: #DARK AND INTIMATE WITH RYAN O'CONNELL" title=":)" height="85" width="770"></a>
+		<a href="https://www.facebook.com/events/365554063461761/" title="Leacock's & Queer McGill Present: #DARK AND INTIMATE WITH RYAN O'CONNELL"><img border="0" src="<?php echo getTimThumbPhotoURL('/home/front-page/ryan_banner.jpg', 770, 84); ?>" alt="Leacock's &amp; Queer McGill Present: #DARK AND INTIMATE WITH RYAN O'CONNELL" title="Leacock's &amp; Queer McGill Present: #DARK AND INTIMATE WITH RYAN O'CONNELL" height="84" width="770"></a>
 	</header>
 	<section id="content">
 		<div class="row">
