@@ -6,6 +6,10 @@
 		return "http://leacocks.com/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
 	}
 	
+	function absurl($relative){
+		return "http://" . $_SERVER['SERVER_NAME'] . (($_SERVER['SERVER_NAME'] == "localhost") ? "/Leacocks" : "") . $relative;
+	}
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +22,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Leacock's Online Mag" href="http://www.leacocks.com/Feed/" /> 
 	<link rel="shortcut icon" href="http://leacocks.com/FeaturesBlog/wp-content/uploads/2010/08/favicon.jpg"/>
 	<link href='http://leacocks.com/code/common.css' rel='stylesheet' type='text/css'>
-	<link href="/home/front-page/front-page.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo absurl("/home/front-page/front-page.css"); ?>" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(	['_setAccount', 'UA-11221838-1'], /*['_setDomainName', 'www.leacocks.com'],*/ ['_trackPageview'] );
@@ -32,6 +36,9 @@
 <body>
 	<header>
 		<img src="<?php echo getTimThumbPhotoURL('/home/front-page/LCslogo.jpg', 250, 87); ?>" alt="Leacock's Logo" title="Leacock's. Welcome." width="250" height="87">
+		<a href="<?php echo absurl('/CampusGirl'); ?>">
+			<img src="<?php echo getTimThumbPhotoURL('/home/front-page/banners/CampusGirl-Banner.jpeg', 770, 83); ?>" alt="CampusGirl" title="Leacock's. Welcome." width="770" height="87">
+		</a>
 	</header>
 	<section id="content">
 		<div class="row">
