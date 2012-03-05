@@ -31,12 +31,19 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
+	  document.onreadystatechange = function(){
+		  if(this.readyState == "complete"){
+			  document.getElementById("banner_a").onclick = function(){
+			  	_gaq.push(['_trackEvent', 'banner', this.title, document.location.pathname + document.location.hash]);
+			  };
+		  }
+	  };
 	  </script>
 </head>
 <body>
 	<header>
 		<img src="<?php echo getTimThumbPhotoURL('/home/front-page/LCslogo.jpg', 250, 87); ?>" alt="Leacock's Logo" title="Leacock's. Welcome." width="250" height="87">
-		<a href="<?php echo absurl('/CampusGirl'); ?>">
+		<a href="<?php echo absurl('/CampusGirl'); ?>" title="CampusGirl: Fashion Editorial by Leacock's" id="banner_a">
 			<img src="<?php echo getTimThumbPhotoURL('/home/front-page/banners/CampusGirl-Banner.jpeg', 770, 83); ?>" alt="CampusGirl" title="Leacock's. Welcome." width="770" height="87">
 		</a>
 	</header>
@@ -81,10 +88,9 @@
 			</div>
 			<div class="right section">
 				<div id="about">Leacock's is an online magazine about music, food, fashion, culture, photography and more.</div>
-				<img src="/home/front-page/cock.png" alt="Cock" title="Yep, it's a rooster." id="cock">
+				<img src="<?php echo absurl('/home/front-page/cock.png'); ?>" alt="Cock" title="Yep, it's a rooster." id="cock">
 			</div>
 		</div>
 	</section>
-	<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
