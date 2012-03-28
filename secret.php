@@ -89,6 +89,9 @@
 			<div class="right section">
 				<div id="about">Leacock's is an online magazine about music, food, fashion, culture, photography and more.</div>
 				<img src="<?php echo absurl('/home/front-page/cock.png'); ?>" alt="Cock" title="Yep, it's a rooster." id="cock">
+				<div id="get_involved_link">
+					<a href="http://leacocks.com/GetInvolved/">Get Involved</a>
+				</div>
 			</div>
 		</div>
 	</section>

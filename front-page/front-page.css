@@ -16,7 +16,7 @@ header {
 	height: 87px;
 }
 
-header img{
+header img {
 	padding: 0px;
 	margin: 0px;
 }
@@ -143,6 +143,16 @@ section#content {
 	opacity:.6;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /*--IE 8 Transparency--
 }*/
+
+#get_involved_link {
+	position: relative;
+	top: 155px;
+	left: 50px;
+	font-family: "Planscribe NF", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase; }
+	#get_involved_link a { color: #ec0026; }
+	#get_involved_link a:hover { color: #ec0026; text-decoration: underline; }
 
 #cock {
 	position: absolute;
