@@ -43,8 +43,8 @@
 <body>
 	<header>
 		<img src="<?php echo getTimThumbPhotoURL('/home/front-page/LCslogo.jpg', 250, 87); ?>" alt="Leacock's Logo" title="Leacock's. Welcome." width="250" height="87">
-		<!--<a href="<?php echo 'http://www.facebook.com/events/129758820483516/'; ?>" title="▼▼†▼ORGY of BLOOD▼†▼▼" id="banner_a">
-			<img src="<?php echo getTimThumbPhotoURL('/home/front-page/banners/OrgyOfBlood-Banner.jpeg', 770, 83); ?>" alt="▼▼†▼ORGY of BLOOD▼†▼▼" width="770" height="87">-->
+		<a href="http://leacocks.com/GetInvolved/" title="Get Involved with Leacock's!" id="banner_a">
+			<img src="<?php echo getTimThumbPhotoURL('/home/front-page/banners/GetInvolvedBanner.jpg', 770, 83); ?>" alt="Get Involved with Leacock's!" width="770" height="87">
 		</a>
 	</header>
 	<section id="content">
