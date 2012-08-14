@@ -22,7 +22,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Leacock's Online Mag" href="http://www.leacocks.com/Feed/" /> 
 	<link rel="shortcut icon" href="http://leacocks.com/FeaturesBlog/wp-content/uploads/2010/08/favicon.jpg"/>
 	<link href='http://leacocks.com/code/common.css' rel='stylesheet' type='text/css'>
-	<link href="<?php echo absurl("/home/front-page/front-page.css"); ?>" rel="stylesheet" type="text/css">
+	<link href="<?php echo absurl("/home/stylesheets/front-page.css"); ?>" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(	['_setAccount', 'UA-11221838-1'], /*['_setDomainName', 'www.leacocks.com'],*/ ['_trackPageview'] );
