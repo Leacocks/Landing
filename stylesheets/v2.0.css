@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Josefin Sans Bold"), local("JosefinSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxAPw1J91axKNXP_-QX9CC8.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Josefin Sans Italic"), local("JosefinSans-Italic"), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/q9w3H4aeBxj0hZ8Osfi3d752ooqJRs02xO3mONBoqeI.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Josefin Sans"), local("JosefinSans"), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Josefin Sans Bold Italic"), local("JosefinSans-BoldItalic"), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v3/ppse0J9fKSaoxCIIJb33G7z7bF_NE717IFsea40dLmU.woff) format("woff"); }
+
+#container {
+  width: 915px;
+  margin: 0 auto; }
+
+header#main-header {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 77px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px #d90000 solid; }
+  header#main-header div {
+    float: left;
+    width: 100px;
+    height: 77px;
+    text-align: center; }
+    header#main-header div a {
+      display: block;
+      margin-top: 40px;
+      color: #d90000;
+      font-size: 24px;
+      font-family: "Josefin Sans";
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      header#main-header div a:hover {
+        text-decoration: underline; }
+    header#main-header div#features-link {
+      width: 170px;
+      text-align: left; }
+    header#main-header div#about-us-link {
+      width: 180px;
+      text-align: left; }
+    header#main-header div#campuspot-link {
+      width: 194px; }
+    header#main-header div#photos-link {
+      width: 130px;
+      text-align: right; }
+    header#main-header div#leacocks-logo {
+      background: url('../front-page/Leacocks-Inverse.png?1344916653') no-repeat;
+      width: 240px;
+      height: 77px; }
