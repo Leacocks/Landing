@@ -42,7 +42,7 @@
 </head>
 <body>
     <div id="container">
-        <header>
+        <header id="main-header">
             <div id="features-link">
                 <a href="/FeaturesBlog/">Features</a>
             </div>
