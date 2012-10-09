@@ -58,30 +58,27 @@
             </div>
         </header>
         <div id="landing">
-            <section id="features">
-                <header>
-                    <span>The</span> Latest
-                </header>
-                <img src="<?php echo absurl("/home/front-page/features1.jpg"); ?>" height="187" width="440" alt="Features Blog" id="features-1">
-                <img src="<?php echo absurl("/home/front-page/features2.jpg"); ?>" height="187" width="450" alt="Features Blog" id="features-2">
+            <section id="features" class="first">
+                <header>Latest</header>
+                <a href="">
+                  <img src="<?php echo absurl("/home/front-page/features1.jpg"); ?>" height="187" width="440" alt="Features Blog" id="features-1">
+                </a>
+                <a href="/FeaturesBlog/2012/09/fall-colours/">
+                  <img src="<?php echo absurl("/home/front-page/features2.jpg"); ?>" height="187" width="450" alt="Features Blog" id="features-2">
+                </a>
+                <a href="/FeaturesBlog/" class="caption">Read all our Features</a>
             </section>
             <section id="campuspot">
-                <header>
-                    <span>The</span> SPOT
-                </header>
-                <img src="<?php echo absurl("/home/front-page/campuspot.jpg"); ?>" height="187" width="293" alt="CampuSPOT">
+                <header>SPOTs</header>
+                <a href="/CampuSPOT/"><img src="<?php echo absurl("/home/front-page/campusspot.jpg"); ?>" height="186" width="293" alt="CampuSPOT"></a>
             </section>
             <section id="photos">
-                <header>
-                    <span>The</span> Album
-                </header>
-                <img src="<?php echo absurl("/home/front-page/photos.jpg"); ?>" height="187" width="293" alt="Photos">
+                <header>Albums</header>
+                <a href="/Photos/"><img src="<?php echo absurl("/home/front-page/photos.jpg"); ?>" height="186" width="295" alt="Photos"></a>
             </section>
             <section id="sessions">
-                <header>
-                    <span>The</span> Session
-                </header>
-                <img src="<?php echo absurl("/home/front-page/sessions.jpg"); ?>" height="187" width="293" alt="Sessions">
+                <header>Sessions</header>
+                <a href="/Sessions/"><img src="<?php echo absurl("/home/front-page/sessions.jpg"); ?>" height="186" width="293" alt="Sessions"></a>
             </section>
         </div>
         <footer>

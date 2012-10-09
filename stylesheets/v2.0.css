@@ -73,6 +73,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 915px;
   margin: 0 auto; }
 
+#landing section header, #landing section .caption {
+  font-family: "Josefin Sans";
+  font-weight: 700; }
+
 header#main-header {
   display: block;
   float: left;
@@ -112,3 +116,36 @@ header#main-header {
       background: url('../front-page/Leacocks-Inverse.png?1344916653') no-repeat;
       width: 240px;
       height: 77px; }
+
+#landing {
+  display: block;
+  float: left;
+  margin-top: 5px; }
+  #landing section {
+    float: left; }
+    #landing section header {
+      display: block;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #d90000; }
+    #landing section img {
+      float: left; }
+    #landing section .caption {
+      display: block;
+      float: right;
+      margin-top: 5px;
+      color: #d90000;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #landing section .caption:after {
+        content: " >"; }
+      #landing section .caption:hover {
+        text-decoration: underline; }
+  #landing #features {
+    margin-bottom: 20px; }
+    #landing #features #features-1 {
+      margin-right: 12px; }
+    #landing #features #features-2 {
+      margin-left: 12px; }
+  #landing #campuspot img, #landing #photos img {
+    margin-right: 17px; }

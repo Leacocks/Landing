@@ -32,6 +32,11 @@
   margin: 0 auto;
 }
 
+%josefin-sans {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+}
+
 // eventually end up in leacocks-header mixin
 header#main-header {
   display: block;
@@ -82,10 +87,49 @@ header#main-header {
   }
 }
 #landing {
+  display: block;
+  float: left;
+  margin-top: 5px;
   section {
-    
+    float: left;
+    header {
+      display: block;
+      @extend %josefin-sans;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $LCRed;
+    }
+    img {
+      float: left;
+    }
+    .caption {
+      display: block;
+      float: right;
+      margin-top: 5px;
+      @extend %josefin-sans;
+      color: $LCRed;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:after {
+        content: " >";
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   #features {
-    
+    margin-bottom: 20px;
+    #features-1 {
+      margin-right: 12px;
+    }
+    #features-2 {
+      margin-left: 12px;
+    }
+  }
+  #campuspot, #photos {
+    img {
+      margin-right: 17px;
+    }
   }
 }
