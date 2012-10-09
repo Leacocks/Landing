@@ -11,4 +11,6 @@ front-page/sessionsold.jpg
 front-page/who-we-are-old.jpg
 .sass-cache
 
+cache/cache_twitter.xml
+
 remote_pull.sh
