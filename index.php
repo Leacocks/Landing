@@ -1,5 +1,9 @@
-<?php 
-	require_once(dirname(__FILE__).'/../code/common.php');
+<?php
+  if($_SERVER["HTTP_HOST"] == "beta.leacocks.com"){
+    require_once(dirname(__FILE__).'/../../code/common.php');
+  }else{
+    require_once(dirname(__FILE__).'/../code/common.php');
+  }
 	$nav = leacocks_nav(); 
 	
 	function getTimThumbPhotoURL($url, $w, $h){
