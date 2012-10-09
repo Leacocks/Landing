@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 915px;
   margin: 0 auto; }
 
-#landing section header, #landing section .caption {
+#landing section header, #landing section .caption, footer {
   font-family: "Josefin Sans";
   font-weight: 700; }
 
@@ -120,7 +120,7 @@ header#main-header {
 #landing {
   display: block;
   float: left;
-  margin-top: 5px; }
+  margin-top: 10px; }
   #landing section {
     float: left; }
     #landing section header {
@@ -166,3 +166,36 @@ footer {
   padding: 10px 0px 0px 10px;
   background-color: #d90000;
   color: white; }
+  footer #twitter {
+    float: left;
+    width: 293px;
+    margin-right: 17px; }
+    footer #twitter #twitter-title {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-decoration: none; }
+      footer #twitter #twitter-title:hover {
+        text-decoration: underline; }
+    footer #twitter #twitter-feed {
+      margin-top: 10px;
+      font-family: Merriweather;
+      font-weight: lighter;
+      font-size: 15px;
+      line-height: 1.5; }
+      footer #twitter #twitter-feed a {
+        color: white;
+        text-decoration: none; }
+        footer #twitter #twitter-feed a:hover {
+          text-decoration: underline; }
+  footer #facebook {
+    float: left;
+    width: 295px;
+    margin-right: 17px; }
+    footer #facebook #facebook-title {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-decoration: none; }
+      footer #facebook #facebook-title:hover {
+        text-decoration: underline; }

@@ -23,6 +23,9 @@
 	<link rel="shortcut icon" href="http://leacocks.com/FeaturesBlog/wp-content/uploads/2010/08/favicon.jpg"/>
 	<link href='http://leacocks.com/code/common.css' rel='stylesheet' type='text/css'>
 	<link href="<?php echo absurl("/home/stylesheets/v2.0.css"); ?>" rel="stylesheet" type="text/css">
+  <script src="<?php echo absurl("/home/js/jquery-1.8.2.min.js"); ?>" type="text/javascript"></script>
+  <script src="<?php echo absurl("/home/js/moment.min.js"); ?>" type="text/javascript"></script>
+  <script src="<?php echo absurl("/home/js/leacocks-home.js"); ?>" type="text/javascript"></script>
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(	['_setAccount', 'UA-11221838-1'], /*['_setDomainName', 'www.leacocks.com'],*/ ['_trackPageview'] );
@@ -31,13 +34,6 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-	  document.onreadystatechange = function(){
-		  if(this.readyState == "complete"){
-			  document.getElementById("banner_a").onclick = function(){
-			  	_gaq.push(['_trackEvent', 'banner', this.title, document.location.pathname + document.location.hash]);
-			  };
-		  }
-	  };
 	  </script>
 </head>
 <body>
@@ -86,10 +82,15 @@
         </div>
         <footer>
           <div id="twitter">
-            <a href="http://www.twitter.com/Leacocks" rel="nofollow" target="_blank">
+            <a href="http://www.twitter.com/Leacocks" rel="nofollow" target="_blank" id="twitter-title">
               Follow Us on Twitter >
             </a>
             <div id="twitter-feed"></div>
+          </div>
+          <div id="facebook">
+            <a href="http://www.facebook.com/Leacocks" rel="nofollow" target="_blank" id="facebook-title">
+              Find Us on Facebook >
+            </a>
           </div>
         </footer>
     </div>

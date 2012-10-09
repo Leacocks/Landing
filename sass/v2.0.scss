@@ -2,6 +2,13 @@
 @import "compass/css3";
 @import "leacocks/variables";
 
+@mixin anchor-hover {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
@@ -89,7 +96,7 @@ header#main-header {
 #landing {
   display: block;
   float: left;
-  margin-top: 5px;
+  margin-top: 10px;
   section {
     float: left;
     header {
@@ -143,5 +150,37 @@ footer {
   background-color: $LCRed;
   @extend %josefin-sans;
   color: white;
-  
+  #twitter {
+    float: left;
+    width: 293px;
+    margin-right: 17px;
+    #twitter-title {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      @include anchor-hover;
+    }
+    #twitter-feed {
+      margin-top: 10px;
+      font-family: Merriweather;
+      font-weight: lighter;
+      font-size: 15px;
+      line-height: 1.5;
+      a {
+        color: white;
+        @include anchor-hover;
+      }
+    }
+  }
+  #facebook {
+    float: left;
+    width: 295px;
+    margin-right: 17px;
+    #facebook-title {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      @include anchor-hover;
+    }
+  }
 }
