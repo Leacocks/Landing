@@ -64,7 +64,12 @@ class FeedCache {
   private function cache_feed() {
     if($this->remote_file_exists($this->remote)) {
       $compressed_content = '';
-      $remote_content = file_get_contents($this->remote);
+      
+      // grab contents of feed from
+      $ch = curl_init($this->remote);
+      curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; da; rv:1.9.0.11) Gecko/2009060215 Firefox/3.0.11');
+      $remote_content = curl_exec($ch);
+      curl_close($ch);
       $compressed_content = preg_replace('/\s*?\n\s*/', "\n", $remote_content);
       $compressed_content = preg_replace('/( |\t)( |\t)*/', " ", $compressed_content);
       file_put_contents($this->local, $compressed_content);
