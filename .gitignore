@@ -1,16 +1,4 @@
 .DS_Store
-front-page/photos.jpg
-front-page/campuspot.jpg
-front-page/features.jpg
-front-page/sessions.jpg
-front-page/who-we-are.jpg
-front-page/campuspot-old.jpg
-front-page/featuresold.jpg
-front-page/photos-old.jpg
-front-page/sessionsold.jpg
-front-page/who-we-are-old.jpg
 .sass-cache
-
 cache/cache_twitter.xml
-
 remote_pull.sh
