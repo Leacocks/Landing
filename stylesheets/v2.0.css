@@ -134,6 +134,7 @@ header#main-header {
       display: block;
       float: right;
       margin-top: 5px;
+      font-size: 14px;
       color: #d90000;
       text-decoration: none;
       text-transform: uppercase; }
@@ -147,5 +148,21 @@ header#main-header {
       margin-right: 12px; }
     #landing #features #features-2 {
       margin-left: 12px; }
-  #landing #campuspot img, #landing #photos img {
+  #landing #campuspot {
+    width: 293px;
     margin-right: 17px; }
+  #landing #photos {
+    width: 295px;
+    margin-right: 17px; }
+  #landing #sessions {
+    width: 293px; }
+
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 105px;
+  margin-top: 10px;
+  padding: 10px 0px 0px 10px;
+  background-color: #d90000;
+  color: white; }

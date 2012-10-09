@@ -60,7 +60,7 @@
         <div id="landing">
             <section id="features" class="first">
                 <header>Latest</header>
-                <a href="">
+                <a href="/FeaturesBlog/2012/08/you-suck-at-travelling/">
                   <img src="<?php echo absurl("/home/front-page/features1.jpg"); ?>" height="187" width="440" alt="Features Blog" id="features-1">
                 </a>
                 <a href="/FeaturesBlog/2012/09/fall-colours/">
@@ -71,18 +71,26 @@
             <section id="campuspot">
                 <header>SPOTs</header>
                 <a href="/CampuSPOT/"><img src="<?php echo absurl("/home/front-page/campusspot.jpg"); ?>" height="186" width="293" alt="CampuSPOT"></a>
+                <a href="/CampuSPOT/" class="caption">Browse our CampuSPOTs</a>
             </section>
             <section id="photos">
                 <header>Albums</header>
                 <a href="/Photos/"><img src="<?php echo absurl("/home/front-page/photos.jpg"); ?>" height="186" width="295" alt="Photos"></a>
+                <a href="/Photos/" class="caption">See more of our Photos</a>
             </section>
             <section id="sessions">
                 <header>Sessions</header>
                 <a href="/Sessions/"><img src="<?php echo absurl("/home/front-page/sessions.jpg"); ?>" height="186" width="293" alt="Sessions"></a>
+                <a href="/Sessions/" class="caption">View more from our concert series</a>
             </section>
         </div>
         <footer>
-            
+          <div id="twitter">
+            <a href="http://www.twitter.com/Leacocks" rel="nofollow" target="_blank">
+              Follow Us on Twitter >
+            </a>
+            <div id="twitter-feed"></div>
+          </div>
         </footer>
     </div>
 </body>
