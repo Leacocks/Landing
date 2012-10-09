@@ -111,7 +111,7 @@
         this.twitterTmpl = "${text}<br><a href=\"${link}\" target=\"_blank\">${pubDate}</a>";
         this.loadTwitterFeed = function(){
             var home = this;
-            return $.get("/home/feed-cache-twitter.php", function(data){
+            return $.get("https://twitter.com/statuses/user_timeline.rss?count=1&user_id=192014565", function(data){
                 var $xml = $(data);
                 $tweet = $xml.find("item").each(function(i){
                    var $this = $(this); 
