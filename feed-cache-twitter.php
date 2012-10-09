@@ -10,6 +10,7 @@ date_default_timezone_set('America/New_York');
 /**
  * Cache remote feeds to improve speed and reliability
  * Author: Erik Runyon
+ * Modified by: Parker Moore
  * Updated: 2012-10-08
  */
 
@@ -117,7 +118,7 @@ class FeedCache {
 
 header("Content-type: text/xml; charset=utf-8");
 ob_start();
-$feed_cache = new FeedCache('cache_twitter.xml', 'https://twitter.com/statuses/user_timeline/121858259.rss');
+$feed_cache = new FeedCache('cache_twitter.xml', 'https://twitter.com/statuses/user_timeline.rss?count=1&user_id=192014565');
 if (substr(trim($feed_cache->get_data()), 0, 5) == "<?xml") {
   echo $feed_cache->get_data();
 } else {
