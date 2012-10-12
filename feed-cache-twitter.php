@@ -117,7 +117,6 @@ class FeedCache {
 
     return $ret;
   }
-
 }
 
 
