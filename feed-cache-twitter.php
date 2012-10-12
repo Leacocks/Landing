@@ -123,7 +123,7 @@ class FeedCache {
 
 header("Content-type: text/xml; charset=utf-8");
 ob_start();
-$feed_cache = new FeedCache('cache_twitter.xml', 'https://twitter.com/statuses/user_timeline.rss?count=1&user_id=192014565');
+$feed_cache = new FeedCache('cache_twitter.xml', 'http://api.twitter.com/1/statuses/user_timeline.rss?count=1&user_id=192014565');
 if (substr(trim($feed_cache->get_data()), 0, 5) == "<?xml") {
   echo $feed_cache->get_data();
 } else {
