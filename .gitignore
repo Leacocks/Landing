@@ -1,6 +1,8 @@
 .DS_Store
 .sass-cache
 cache/cache_twitter.xml
+cache/*.txt
+cache/*.touch
 remote_pull.sh
 
 Gemfile.lock
