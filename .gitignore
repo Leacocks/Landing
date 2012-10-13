@@ -4,5 +4,5 @@ cache/cache_twitter.xml
 cache/*.txt
 cache/*.touch
 remote_pull.sh
-
 Gemfile.lock
+db.inc.php
