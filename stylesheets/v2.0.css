@@ -144,6 +144,18 @@ header#main-header {
         text-decoration: underline; }
   #landing #features {
     margin-bottom: 20px; }
+    #landing #features > a {
+      position: relative; }
+      #landing #features > a > header {
+        display: block;
+        width: 440px;
+        padding: 10px 0;
+        background-color: white;
+        opacity: 0.8;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        top: 100px; }
     #landing #features #features-1 {
       margin-right: 12px; }
     #landing #features #features-2 {
