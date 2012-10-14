@@ -71,8 +71,8 @@
                 </a>
                 <?php $post = $result->fetch_assoc(); ?>
                 <a href="<?php echo $post['guid'] ?>">
-                  <header><?php echo $post['post_title'] ?></header>
-                  <img src="thumb.php?w=450&h=187&q=90&zc=1&src=<?php echo urlencode($post['meta_value']); ?>" height="187" width="450" alt="Features Blog" id="features-1">
+                  <header id="features-2-header"><?php echo $post['post_title'] ?></header>
+                  <img src="thumb.php?w=450&h=187&q=90&zc=1&src=<?php echo urlencode($post['meta_value']); ?>" height="187" width="450" alt="Features Blog" id="features-2">
                 </a>
                 <?php
                 endif;

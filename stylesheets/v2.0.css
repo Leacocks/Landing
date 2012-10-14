@@ -148,14 +148,19 @@ header#main-header {
       position: relative; }
       #landing #features > a > header {
         display: block;
-        width: 440px;
-        padding: 10px 0;
+        width: 345px;
+        padding: 10px 0 5px 10px;
         background-color: white;
         opacity: 0.8;
         float: left;
         z-index: 10;
         position: absolute;
-        top: 100px; }
+        top: 100px;
+        color: #0d0d0d;
+        font-style: italic; }
+        #landing #features > a > header#features-2-header {
+          left: 12px;
+          width: 330px; }
     #landing #features #features-1 {
       margin-right: 12px; }
     #landing #features #features-2 {
