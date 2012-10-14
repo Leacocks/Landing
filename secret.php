@@ -7,7 +7,7 @@
 	$nav = leacocks_nav(); 
 	
 	function getTimThumbPhotoURL($url, $w, $h){
-		return "http://leacocks.com/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
+		return "/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
 	}
 	
 	function absurl($relative){
@@ -71,12 +71,12 @@
                 if($result): $post = $result->fetch_assoc(); ?>
                 <a href="<?php echo $post['guid'] ?>">
                   <header><?php echo $post['post_title'] ?></header>
-                  <img src="thumb.php?w=440&h=187&q=90&zc=1&src=<?php echo urlencode(descale($post['meta_value'])); ?>" height="187" width="440" alt="Features Blog" id="features-1">
+                  <img src="<?php echo getTimThumbPhotoURL(descale($post['meta_value'], 440, 187); ?>" height="187" width="440" alt="Features Blog" id="features-1">
                 </a>
                 <?php $post = $result->fetch_assoc(); ?>
                 <a href="<?php echo $post['guid'] ?>">
                   <header id="features-2-header"><?php echo $post['post_title'] ?></header>
-                  <img src="thumb.php?w=450&h=187&q=90&zc=1&src=<?php echo urlencode(descale($post['meta_value'])); ?>" height="187" width="450" alt="Features Blog" id="features-2">
+                  <img src="<?php echo getTimThumbPhotoURL(descale($post['meta_value'], 450, 187); ?>" height="187" width="450" alt="Features Blog" id="features-2">
                 </a>
                 <?php
                 endif;
