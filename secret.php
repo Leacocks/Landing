@@ -60,12 +60,24 @@
         <div id="landing">
             <section id="features" class="first">
                 <header>Latest</header>
-                <a href="/FeaturesBlog/2012/08/you-suck-at-travelling/">
-                  <img src="<?php echo absurl("/home/front-page/features1.jpg"); ?>" height="187" width="440" alt="Features Blog" id="features-1">
+                <?php
+                require('db.inc.php');
+                $mysqli = DB::establish_database_connection('features');
+                $result = $mysqli->query('select `wp_posts`.`post_title`, `wp_posts`.`guid`, `wp_postmeta`.`meta_id`, `wp_postmeta`.`meta_key`, `wp_postmeta`.`meta_value` from `wp_posts` LEFT JOIN `wp_postmeta` ON (`wp_posts`.`ID` = `wp_postmeta`.`post_id`) WHERE `post_status` = "publish" AND `post_type` = "post" AND `meta_key` = "image" ORDER BY `post_date` DESC LIMIT 0,2');
+                if($result): $post = $result->fetch_assoc(); ?>
+                <a href="<?php echo $post['guid'] ?>">
+                  <header><?php echo $post['post_title'] ?></header>
+                  <img src="thumb.php?w=440&h=187&q=90&zc=1&src=<?php echo urlencode($post['meta_value']); ?>" height="187" width="440" alt="Features Blog" id="features-1">
                 </a>
-                <a href="/FeaturesBlog/2012/09/fall-colours/">
-                  <img src="<?php echo absurl("/home/front-page/features2.jpg"); ?>" height="187" width="450" alt="Features Blog" id="features-2">
+                <?php $post = $result->fetch_assoc(); ?>
+                <a href="<?php echo $post['guid'] ?>">
+                  <header><?php echo $post['post_title'] ?></header>
+                  <img src="thumb.php?w=450&h=187&q=90&zc=1&src=<?php echo urlencode($post['meta_value']); ?>" height="187" width="450" alt="Features Blog" id="features-1">
                 </a>
+                <?php
+                endif;
+                $mysqli->close();
+                ?>
                 <a href="/FeaturesBlog/" class="caption">Read all our Features</a>
             </section>
             <section id="campuspot">
