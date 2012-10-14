@@ -6,8 +6,12 @@
   }
 	$nav = leacocks_nav(); 
 	
-	function getTimThumbPhotoURL($url, $w, $h){
-		return "/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
+	function getTimThumbPhotoURL($url, $w, $h, $params=""){
+        $tturl = "/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
+        if($params != ""){
+            $tturl = $tturl."&".implode("&", $params);
+        }
+		return $tturl;
 	}
 	
 	function absurl($relative){
@@ -84,19 +88,35 @@
                 ?>
                 <a href="/FeaturesBlog/" class="caption">Read all our Features</a>
             </section>
+            <?php
+            # now the other db
+            $mysqli = DB::establish_database_connection('other');
+            ?>
             <section id="campuspot">
                 <header>SPOTs</header>
-                <a href="/CampuSPOT/"><img src="<?php echo absurl("/home/front-page/campusspot.jpg"); ?>" height="186" width="293" alt="CampuSPOT"></a>
+                <?php 
+                $result = $mysqli->query('SELECT src FROM campuspot ORDER BY date DESC LIMIT 0,1');
+                $spot = @$result->fetch_assoc();
+                ?>
+                <a href="/CampuSPOT/"><img src="<?php echo getTimThumbPhotoURL('http://leacocks.com/CampuSPOT/media/'.$spot['src'], 293, 186, array('a=t')); ?>" height="186" width="293" alt="CampuSPOT"></a>
                 <a href="/CampuSPOT/" class="caption">Browse our CampuSPOTs</a>
             </section>
             <section id="photos">
                 <header>Albums</header>
-                <a href="/Photos/"><img src="<?php echo absurl("/home/front-page/photos.jpg"); ?>" height="186" width="295" alt="Photos"></a>
+                <?php 
+                $result = $mysqli->query('SELECT src FROM photos ORDER BY date DESC LIMIT 0,1');
+                $photo = @$result->fetch_assoc();
+                ?>
+                <a href="/Photos/"><img src="<?php echo getTimThumbPhotoURL('http://leacocks.com/Photos/media/'.$photo['src'], 295, 186, array('a=t')); ?>" height="186" width="295" alt="Photos"></a>
                 <a href="/Photos/" class="caption">See more of our Photos</a>
             </section>
             <section id="sessions">
                 <header>Sessions</header>
-                <a href="/Sessions/"><img src="<?php echo absurl("/home/front-page/sessions.jpg"); ?>" height="186" width="293" alt="Sessions"></a>
+                <?php 
+                $result = $mysqli->query('SELECT photo FROM sessions_videos ORDER BY date DESC LIMIT 0,1');
+                $session = @$result->fetch_assoc();
+                ?>
+                <a href="/Sessions/"><img src="<?php echo getTimThumbPhotoURL('http://leacocks.com/'.$session['photo'], 293, 186, array('a=t')); ?>" height="186" width="293" alt="Sessions"></a>
                 <a href="/Sessions/" class="caption">View more from our concert series</a>
             </section>
         </div>
