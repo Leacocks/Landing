@@ -115,6 +115,7 @@
                 <?php 
                 $result = $mysqli->query('SELECT photo FROM sessions_videos ORDER BY date DESC LIMIT 0,1');
                 $session = @$result->fetch_assoc();
+                $mysqli->close();
                 ?>
                 <a href="/Sessions/"><img src="<?php echo getTimThumbPhotoURL('http://leacocks.com/'.$session['photo'], 293, 186, array('a=t')); ?>" height="186" width="293" alt="Sessions"></a>
                 <a href="/Sessions/" class="caption">View more from our concert series</a>
