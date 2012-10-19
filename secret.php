@@ -129,7 +129,7 @@
             <div id="twitter-feed"></div>
           </div>
           <div id="facebook">
-            <a href="http://www.facebook.com/Leacocks" rel="nofollow" target="_blank" id="facebook-title">
+            <a href="http://www.facebook.com/LeacocksMag" rel="nofollow" target="_blank" id="facebook-title">
               Find Us on Facebook >
             </a>
           </div>
