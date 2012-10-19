@@ -113,7 +113,7 @@
             <section id="sessions">
                 <header>Sessions</header>
                 <?php 
-                $result = $mysqli->query('SELECT photo FROM sessions_videos ORDER BY date DESC LIMIT 0,1');
+                $result = $mysqli->query('SELECT photo FROM sessions_videos WHERE id=4 ORDER BY date DESC LIMIT 0,1');
                 $session = @$result->fetch_assoc();
                 $mysqli->close();
                 ?>
