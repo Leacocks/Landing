@@ -133,6 +133,11 @@
               Find Us on Facebook >
             </a>
           </div>
+          <div id="get-involved">
+            <a href="/GetInvolved/" target="_blank" id="get-involved-title">
+              Get Involved >
+            </a>
+          </div>
         </footer>
     </div>
 </body>

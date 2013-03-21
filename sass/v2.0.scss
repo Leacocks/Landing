@@ -203,4 +203,15 @@ footer {
       @include anchor-hover;
     }
   }
+  #get-involved {
+    float: left;
+    width: 275px;
+    margin-right: 17px;
+    #get-involved-title {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      @include anchor-hover;
+    }
+  }
 }
