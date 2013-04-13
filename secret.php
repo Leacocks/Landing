@@ -71,7 +71,7 @@
                 <?php
                 require('db.inc.php');
                 $mysqli = DB::establish_database_connection('features');
-                $result = $mysqli->query('select `wp_posts`.`post_title`, `wp_posts`.`guid`, `wp_postmeta`.`meta_id`, `wp_postmeta`.`meta_key`, `wp_postmeta`.`meta_value` from `wp_posts` LEFT JOIN `wp_postmeta` ON (`wp_posts`.`ID` = `wp_postmeta`.`post_id`) WHERE `post_status` = "publish" AND `post_type` = "post" AND `meta_key` = "image" ORDER BY `post_date` DESC LIMIT 0,2');
+                $result = $mysqli->query('select `lea_posts`.`post_title`, `lea_posts`.`guid`, `lea_postmeta`.`meta_id`, `lea_postmeta`.`meta_key`, `lea_postmeta`.`meta_value` from `lea_posts` LEFT JOIN `lea_postmeta` ON (`lea_posts`.`ID` = `lea_postmeta`.`post_id`) WHERE `post_status` = "publish" AND `post_type` = "post" AND `meta_key` = "image" ORDER BY `post_date` DESC LIMIT 0,2');
                 if($result): $post = $result->fetch_assoc(); ?>
                 <a href="<?php echo $post['guid'] ?>">
                   <header><?php echo $post['post_title'] ?></header>
