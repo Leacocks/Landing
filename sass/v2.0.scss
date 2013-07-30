@@ -47,7 +47,7 @@
 // eventually end up in leacocks-header mixin
 header#main-header {
   display: block;
-  float: left;
+  //float: left;
   width: 100%;
   height: 77px;
   margin-top: 10px;
@@ -72,18 +72,18 @@ header#main-header {
       }
     }
     &#features-link {
-      width: 170px;
+      width: 132px;
       text-align: left;
     }
-    &#about-us-link {
-      width: 180px;
-      text-align: left;
+    &#sessions-link {
+      width: 174px;
+      text-align: right;
     }
     &#campuspot-link {
-      width: 194px;
+      width: 230px;
     }
     &#photos-link {
-      width: 130px;
+      width: 138px;
       text-align: right;
     }
     &#leacocks-logo {
@@ -93,6 +93,7 @@ header#main-header {
     }
   }
 }
+
 #landing {
   display: block;
   float: left;

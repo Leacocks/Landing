@@ -4,8 +4,8 @@
   }else{
     require_once(dirname(__FILE__).'/../code/common.php');
   }
-	$nav = leacocks_nav(); 
-	
+	$nav = leacocks_nav();
+
 	function getTimThumbPhotoURL($url, $w, $h, $params=""){
         $tturl = "/home/thumb.php?src=".urlencode($url)."&zc=1&q=100&w=$w&h=$h";
         if($params != ""){
@@ -13,7 +13,7 @@
         }
 		return $tturl;
 	}
-	
+
 	function absurl($relative){
 		return "http://" . $_SERVER['SERVER_NAME'] . (($_SERVER['SERVER_NAME'] == "localhost") ? "/Leacocks" : "") . $relative;
 	}
@@ -21,7 +21,7 @@
         // strip scaled resolution from image URL. e.g. "-300x224" from "xxx-300x224.jpg"
         return preg_replace("/-\d{3}x\d{3}/", "", $url);
     }
-	
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@
 	<title>Leacock's Online Arts Magazine</title>
 	<meta name="author" content="<?=$nav['Who We Are']?>">
 	<!-- Date: 2011-04-25 -->
-	<link rel="alternate" type="application/rss+xml" title="Leacock's Online Mag" href="http://www.leacocks.com/Feed/" /> 
+	<link rel="alternate" type="application/rss+xml" title="Leacock's Online Mag" href="http://www.leacocks.com/Feed/" />
 	<link rel="shortcut icon" href="http://leacocks.com/FeaturesBlog/wp-content/uploads/2010/08/favicon.jpg"/>
 	<link href='http://leacocks.com/code/common.css' rel='stylesheet' type='text/css'>
 	<link href="<?php echo absurl("/home/stylesheets/v2.0.css"); ?>" rel="stylesheet" type="text/css">
@@ -54,15 +54,15 @@
             <div id="features-link">
                 <a href="/FeaturesBlog/">Features</a>
             </div>
-            <div id="about-us-link">
-                <a href="/WhoWeAre/">About Us</a>
-            </div>
-            <div id="leacocks-logo"></div>
             <div id="campuspot-link">
                 <a href="/CampuSPOT/">CampuSPOT</a>
             </div>
+            <div id="leacocks-logo"><a href="/">&nbsp;</a></div>
             <div id="photos-link">
                 <a href="/Photos/">Photos</a>
+            </div>
+            <div id="sessions-link">
+                <a href="/Sessions/">Sessions</a>
             </div>
         </header>
         <div id="landing">
@@ -94,7 +94,7 @@
             ?>
             <section id="campuspot">
                 <header>SPOTs</header>
-                <?php 
+                <?php
                 $result = $mysqli->query('SELECT src FROM campuspot ORDER BY date DESC LIMIT 0,1');
                 $spot = @$result->fetch_assoc();
                 ?>
@@ -103,7 +103,7 @@
             </section>
             <section id="photos">
                 <header>Albums</header>
-                <?php 
+                <?php
                 $result = $mysqli->query('SELECT src FROM photos ORDER BY date DESC LIMIT 0,1');
                 $photo = @$result->fetch_assoc();
                 ?>
@@ -112,7 +112,7 @@
             </section>
             <section id="sessions">
                 <header>Sessions</header>
-                <?php 
+                <?php
                 $result = $mysqli->query('SELECT photo FROM sessions_videos WHERE id=4 ORDER BY date DESC LIMIT 0,1');
                 $session = @$result->fetch_assoc();
                 $mysqli->close();
